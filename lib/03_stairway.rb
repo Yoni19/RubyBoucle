@@ -1,43 +1,25 @@
-def lancer0
-    marche = 0
+marche_actuelle = 0
+
+while marche_actuelle < 11
+  resultat_du_roll = rand(1..6)
+  
+                if marche_actuelle === 10
+                    puts "Tu es sur la marche 10, bravo ! Tu as a atteint la derniere marche, tu as gagné mon loulou ! heureux ?"
+                    exit
+                elsif resultat_du_roll == 5 ||resultat_du_roll == 6 
+                    puts "Bravo ! tu as fait un #{resultat_du_roll}, tu montes de une place ! Tu es sur la marche #{marche_actuelle} !"
+                    marche_actuelle += 1
+         
+                elsif resultat_du_roll == 1 
+                    puts "Aie !tu as fait un #{resultat_du_roll}, tu descend d'une place, tu es sur la marche #{ marche_actuelle} !"
+                    marche_actuelle -= 1 
+
+                elsif resultat_du_roll == 2 || resultat_du_roll == 3 ||resultat_du_roll == 4 
+                    puts "Pas de chance, tu as fait un #{resultat_du_roll}, tu ne bouges pas, tu es sur la marche  #{marche_actuelle} !"
+                if marche_actuelle < 0
+                       marche_actuelle = 0
+                    
+                    end
+
+                end
 end
-
-def lancer1
-       a = 1 + rand(6)
-        puts " BRAVO ! tu avances d'une marche"
-    end
-
-def lancer2
-    b = 1 + rand(6)     
-        puts "Ohhhh nonnnnn !!! tu descends d'une marche c'est con !!! tu es a la marche #{print marche}"
-    end 
-
-def lancer3
-     c = 1 + rand(6)
-        puts "Dommage t'es mauvais! relance le dé mon chou !!!!"
-    end
-
-    def lance(marche,a,b,c)
-      
-        for marche in (0..11)
-        if a == 5 || 6
-            a
-        elsif b == 1
-            b
-        else 
-            c
-        end
-    end
-    end
-    
-
-def perform 
-    marche = lancer0
-    a = lancer1
-    b = lancer2
-    c = lancer3
-    lance(a,b,c)
-
-end
-
-perform

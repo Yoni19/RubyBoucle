@@ -1,5 +1,4 @@
 
-
 def signup
     puts "Bonjour, veuillez choisir votre nouveau mot de passe, merci."
     print "> "
