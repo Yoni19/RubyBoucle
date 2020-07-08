@@ -16,8 +16,8 @@ end
 
 def welcome_screen(mdp,mdp2)
     if mdp == mdp2
-        puts "Bonjour, bienvenue dans votre zone secrète ! /n
-        Secret du jour : Chez les chats, le nez est comme l'empreinte digitale des hommes, tu dormiras moins con ! "
+        puts "Bonjour, bienvenue dans votre zone secrète ! Secret du jour : Chez les chats, le nez est comme l'empreinte digitale des hommes, tu dormiras moins con ! "
+        exit
     else 
         puts " Mot de passe incorrect, veuillez en saisir un nouveau"
     end
@@ -31,5 +31,7 @@ def perform
     mdp2 = login
     welcome_screen(mdp,mdp2)
     end
+
     
 perform
+exit
