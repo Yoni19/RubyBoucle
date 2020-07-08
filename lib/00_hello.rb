@@ -5,7 +5,7 @@
 
 def ask_first_name
     puts " quel est votre prenom ?"
-    return <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<first_name = gets.chomp
+    return first_name = gets.chomp
 
 end
 
